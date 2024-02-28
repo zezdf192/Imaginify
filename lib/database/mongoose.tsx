@@ -17,6 +17,7 @@ if (!cached) {
 }
 
 export const connectToDatabase = async () => {
+  console.log("ceraasd");
   if (cached.conn) return cached.conn;
 
   if (!MONGODB_URL) throw new Error("Missing MongoDB Url");
